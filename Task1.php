@@ -28,3 +28,4 @@
   $a2=strtolower($a);
   echo ucfirst($a2);
   ?>
+  
