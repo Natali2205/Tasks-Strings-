@@ -3,7 +3,6 @@
   echo strtoupper($a);
   ?>
   <br>
-  
       <?php
   $c='PHP';
   echo strtolower($c);
