@@ -23,8 +23,7 @@
   echo ucwords($d);
   ?>
   <br>
-      
-	  <?php
+       <?php
   $a='London';
   $a2=strtolower($a);
   echo ucfirst($a2);
