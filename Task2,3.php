@@ -24,8 +24,7 @@
   $ht=strpos($o, $strof);
   $htl=strlen($strof);
   echo substr($o, $ht, $htl); 
-       
-       }
+  }
        echo "'",finder("php"),"',";
        echo "'",finder("css"),"',";
        echo "'",finder("html"),"',";
