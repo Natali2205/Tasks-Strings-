@@ -1,0 +1,72 @@
+$words  = 'html css php';
+$pieces = explode(" ", $words);
+echo "Завдання 1 (explode, implode)";
+echo $pieces[0]; 
+echo $pieces[1];
+echo $pieces[2];
+
+$array = array('html', 'css', 'php');
+echo "Завдання 2 (explode, implode)";
+echo implode(",", $array);
+
+$words  = '2013-12-31';
+$pieces = explode("-", $words);
+//echo $pieces[0]; // кусок1
+//echo $pieces[1];
+//echo $pieces[2];
+echo "Завдання 3 (explode, implode)";
+echo implode(".", $pieces);
+
+echo "РОБОТА з str_split";
+
+$str = "1234567890";
+
+
+$arr1 = str_split($str, 2);
+echo "Завдання 1: ";
+print_r ($arr1)."\n";
+
+$arr2= str_split($str, 1);
+echo "Завдання 2: ";
+print_r ($arr2)."\n";
+
+$arr2= str_split($str, 2);
+echo "Завдання 3: ";
+echo implode("-", $arr2)."\n";
+echo "РОБОТА з trim";
+$str2="goto   c";
+echo "Завдання 1: ";
+echo rtrim($str2)."\n";
+
+$str3="/php/";
+$trimmed = trim($str3,  "/t");
+echo "Завдання 2: ";
+var_dump($trimmed)."\n";
+
+$str3="строка строка строка.";
+$tr = rtrim($str3,  ".");
+echo "Завдання 3: ";
+var_dump ($tr.".");
+
+echo "РОБОТА з strrev";
+$strl="Hello world!";
+echo "Завдання 1: ";
+echo strrev($strl)."\n";
+
+$str5="madam";
+$str0=strrev($str5);
+if($str5==$str0){
+    echo "Завдання 2: ";
+    echo $str0."\n";
+}
+echo "РОБОТА з str_shuffle";
+$str = '123456';
+echo "Завдання 1: ";
+echo str_shuffle($str)."\n";
+
+$str = 'abcdefd';
+echo "Завдання 2: ";
+echo str_shuffle($str);
+
+for ($i=ord('a'); $i<=ord('z'); $i++) 
+  echo chr($i);

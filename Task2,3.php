@@ -1,11 +1,11 @@
-      <?php
+<?php
   // Task with STRLEN
   //1
   $d='html css php';
   echo strlen($d);
   ?>
   <br>
-      <?php
+<?php
  //2
  $password='1234';
  $passlen=strlen($password);
@@ -16,7 +16,7 @@
  }
  ?>
   <br>
-     <?php
+<?php
  //Task with SUBSTR
  //1
  function finder ($strof){
@@ -31,7 +31,7 @@
       ?>
  ?>
   <br>
-  <?php
+<?php
   //2
    $r="Ukranian";
    $m=strrev($r);
@@ -39,13 +39,13 @@
    echo strrev($rr);
  ?>
   <br>
-  <?php
+<?php
   //3
  $m="mong_o";
  echo substr($m, 3, 5);
  ?>
   <br>
-  <?php
+<?php
     //4
  $k1='http://..';
  $k2='https://..';
@@ -62,7 +62,7 @@
      echo "No";
  }
  ?><br>
-  <?php
+<?php
   //5
   $new_string='mokochoko';
   $new_string2='image.png';
@@ -75,7 +75,7 @@
       }
   ?>
   <br>
-  <?php
+<?php
   //6
   $new_string='mokochoko.jpg';
   $new_string2='image.png';
@@ -91,7 +91,7 @@
       }
 	 ?>
   <br>
-  <?php
+<?php
   //7  
  $ryadok="Mockachino";
  $ryadok2="Milk";
