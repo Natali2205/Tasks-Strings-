@@ -1,3 +1,4 @@
+<pre>
 <?php
   //STR_REPLACE
 //1
@@ -7,7 +8,7 @@
  <?php
 //2 
        $str="somabjc";
-       echo str_replace(array("a","b","c"),"\n";
+       echo str_replace(array("a","b","c"),
        array(1,2,3),$str);
 	    ?>
 <?php
@@ -15,7 +16,7 @@
 	    $str='1a2b3c4b5d6e7f8h0';
        echo preg_replace('~[0-9]+~','',$str),"\n";
       ?>
-	         
+<?php
  //STRTR
 //1
       echo strtr("akbcdef", "abc", 123),"\n";
