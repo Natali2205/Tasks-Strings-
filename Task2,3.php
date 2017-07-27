@@ -27,9 +27,9 @@
   }
        echo "'",finder("php"),"',";
        echo "'",finder("css"),"',";
-       echo "'",finder("html"),"',";
+       echo "'",finder("html"),"'.";
       ?>
- ?>
+ 
   <br>
 <?php
   //2
