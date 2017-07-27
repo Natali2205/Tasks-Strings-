@@ -3,9 +3,8 @@
   //1
   $d='html css php';
   echo strlen($d);
-  ?>
-  <br>
-<?php
+  echo '<hr>';
+
  //2
  $password='1234';
  $passlen=strlen($password);
@@ -14,9 +13,8 @@
  } else {
  echo "Невірна кількість символів, придумайте новий";
  }
- ?>
-  <br>
-<?php
+ echo '<hr>';
+ 
  //Task with SUBSTR
  //1
  function finder ($strof){
@@ -28,41 +26,41 @@
        echo "'",finder("php"),"',";
        echo "'",finder("css"),"',";
        echo "'",finder("html"),"'.";
-      ?>
+  echo '<hr>';
  
-  <br>
-<?php
+  
   //2
    $r="Ukranian";
    $m=strrev($r);
    $rr=substr ($m,0,3);
    echo strrev($rr);
- ?>
-  <br>
-<?php
+   echo '<hr>';
+
   //3
- $m="mong_o";
- echo substr($m, 3, 5);
- ?>
-  <br>
-<?php
-    //4
+   $str = 'http://somestring';
+	if (substr($str, 0, 7) == 'http://') {
+		echo 'Yes';
+	} else {
+		echo 'No';
+	}
+ echo '<hr>';
+    
+	//4
  $k1='http://..';
  $k2='https://..';
  $some_str='http://epam.com';
  $e= substr($k1, 0,7);
  $m= substr($k2, 0,7);
- echo $e,$m;
+ //echo $e,$m;
 
  if(substr($some_str, 0,7)==$m){
- echo "Yes"; 
- } else if ( substr($some_str, 0,7)==$e){ 
- echo "Yes";
+     echo "Yes"; 
+ }else if( substr($some_str, 0,7)==$e){ 
+    echo "Yes";
  }else{
-     echo "No";
+      echo "No";
  }
- ?><br>
-<?php
+ echo '<hr>';
   //5
   $new_string='mokochoko';
   $new_string2='image.png';
@@ -73,25 +71,18 @@
       } else{
       echo "Sorry, but No!";
       }
-  ?>
-  <br>
-<?php
+  echo '<hr>';
   //6
-  $new_string='mokochoko.jpg';
-  $new_string2='image.png';
-  $n_s_rev=strrev($new_string);
-  // echo substr($n_s_rev,0,4);
-   if(substr($n_s_rev,0,4)=="gnp."){
+  $str='mokochoko.png';
+  $n_s_rev=substr($str,-4);
+   if($n_s_rev==".png"){
       echo "Yes!";
-   } else if (substr($n_s_rev,0,4)=="gpj."){
+   } else if ($n_s_rev====".jpg"){
       echo "Great, Yes!";
-      
-      } else{
+       } else{
       echo "Sorry, but No!";
       }
-	 ?>
-  <br>
-<?php
+ echo '<hr>';
   //7  
  $ryadok="Mockachino";
  $ryadok2="Milk";
